@@ -17,7 +17,7 @@ import java.util.function.ToDoubleFunction;
  */
 public class QuanLyHocSinh {
 
-   private List<HocSinh> listHocSinh=new ArrayList<HocSinh>();
+   private List<HocSinh> listHocSinh;
     public List<HocSinh> getListHocSinh() {
         return listHocSinh;
     }
@@ -27,6 +27,11 @@ public class QuanLyHocSinh {
     }
     public QuanLyHocSinh() {
     }
+
+    public QuanLyHocSinh(List<HocSinh> listHocSinh) {
+        this.listHocSinh = listHocSinh;
+    }
+    
     public void themHocSinh(HocSinh hs){
         this.getListHocSinh().add(hs);
     }

@@ -5,13 +5,17 @@
  */
 package com.cuongdq.list;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author quoccuong
  */
-public class Main {
+public class HSMain {
     public static void main(String[] args) {
-        QuanLyHocSinh qlhs=new QuanLyHocSinh();
+        List<HocSinh> lsHS=new ArrayList<HocSinh>();
+        QuanLyHocSinh qlhs=new QuanLyHocSinh(lsHS);
         HocSinh hs1=new HocSinh("1","Dang Quoc A","CNTT1","CNTT",10);
         HocSinh hs2=new HocSinh("2","Dang Quoc A","KHMT2","CNTT",9);
         HocSinh hs3=new HocSinh("3","Dang Quoc C","HTTT3","CNTT",8);
@@ -20,6 +24,7 @@ public class Main {
         HocSinh hs6=new HocSinh("6","Dang Quoc F","OTO1","OTO",8);
         HocSinh hs7=new HocSinh("7","Dang Quoc G","QTKD1","QTKD",2);
         HocSinh hs8=new HocSinh("8","Dang Quoc H","CNTT8","CNTT",4);
+        
         qlhs.themHocSinh(hs1);
         qlhs.themHocSinh(hs2);
         qlhs.themHocSinh(hs3);
