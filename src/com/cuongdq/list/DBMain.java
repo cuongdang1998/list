@@ -20,12 +20,9 @@ public class DBMain {
         DanhBa db5=new DanhBa("ToThang","098773");
         DanhBa db6=new DanhBa("ToTien","012324");
         ArrayList<DanhBa> dbl=new ArrayList<DanhBa>();
-        dbl.add(db1);
-        dbl.add(db2);
-        dbl.add(db3);
-        dbl.add(db4);
-        dbl.add(db5);
-        dbl.add(db6);
+        dbl.add(db1); dbl.add(db2);
+        dbl.add(db3);dbl.add(db4);
+        dbl.add(db5);dbl.add(db6);
         QuanLyDanhBa qldb=new QuanLyDanhBa(dbl);
         qldb.printListDB(qldb.getListDB());
         qldb.suaDB("Cuong", "0978353432");
