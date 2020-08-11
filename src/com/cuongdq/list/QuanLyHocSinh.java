@@ -33,7 +33,18 @@ public class QuanLyHocSinh {
     }
     
     public void themHocSinh(HocSinh hs){
-        this.getListHocSinh().add(hs);
+        if(!ktMaTonTai(hs.getMaHS())){
+            this.getListHocSinh().add(hs);
+        }
+       
+    }
+    public boolean ktMaTonTai(String ma){
+        for(HocSinh hs: getListHocSinh()){
+            if(hs.getMaHS().equals(ma)){
+                return true;
+            }
+        }
+        return false;
     }
     public boolean ktTonTai(String tenhs){
         for(HocSinh hs: getListHocSinh()){
@@ -78,4 +89,9 @@ public class QuanLyHocSinh {
                System.out.println(hs.toString());
            }
     }   
+    public void printHS(List<HocSinh> ls){
+        for(HocSinh hs: ls){
+            System.out.println(hs.toString());
+        }
+    }
 }

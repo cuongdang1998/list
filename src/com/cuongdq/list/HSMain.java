@@ -17,7 +17,7 @@ public class HSMain {
         List<HocSinh> lsHS=new ArrayList<HocSinh>();
         QuanLyHocSinh qlhs=new QuanLyHocSinh(lsHS);
         HocSinh hs1=new HocSinh("1","Dang Quoc A","CNTT1","CNTT",10);
-        HocSinh hs2=new HocSinh("2","Dang Quoc A","KHMT2","CNTT",9);
+        HocSinh hs2=new HocSinh("1","Dang Quoc A","KHMT2","CNTT",9);
         HocSinh hs3=new HocSinh("3","Dang Quoc C","HTTT3","CNTT",8);
         HocSinh hs4=new HocSinh("4","Dang Quoc D","KTPM4","CNTT",7);
         HocSinh hs5=new HocSinh("5","Dang Quoc E","CDT5","CK",6);
@@ -33,6 +33,9 @@ public class HSMain {
         qlhs.themHocSinh(hs6);
         qlhs.themHocSinh(hs7);
         qlhs.themHocSinh(hs8);
+        //Print all student
+        System.out.println("Print all students");
+        qlhs.printHS(lsHS);
         //Check student name in list
         System.out.println(qlhs.ktTonTai("Dang Quoc A"));
         //Fix student name by student code
